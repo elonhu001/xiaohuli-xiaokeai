@@ -1,0 +1,735 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>小狐狸爱小可爱</title>
+<script type="text/javascript" src="js/functions_dev.js"></script>
+<link href="css/bootstrap-4.0.0.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.0.0.js"></script>
+</head>
+
+<style type="text/css">
+	#clock-box {
+		left: 60px; top: 550px; font-size: 28px; display: none; position: absolute;
+	}
+	#clock-box a {
+		font-size: 28px; text-decoration: none;
+	}
+		#clock {
+		margin-left: 48px;
+	}
+	#clock .digit {
+		font-size: 64px;
+	}
+	#box1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 750px;
+    background-image: url(img/4.jpg);
+    background-repeat: repeat-x;
+    background-position: center center;
+	}
+	#box2{
+    position: inherit;
+    margin: auto;
+    top: 140px;
+    left: 0;
+    right: 0;
+    width: 760px;
+    height: 6px;
+    background-color: #474747;
+	}
+
+	#web_title{
+		position:relative;
+		text-align: center;
+    	top: 50px;
+    	left: 0px;
+		color:#1B1B1B;
+		font-size: 70px;
+	}
+	#xiao_biao_ti{
+		position:relative;
+		text-align: center;
+    	top: 50px;
+    	left: 0px;
+		color:#1B1B1B;
+		font-size: 20px;	
+	}
+	#ji_shi{
+		position:relative;
+		text-align: center;
+    	top: 250px;
+    	left: 0px;
+		color:#E59092;
+		font-size: 35px;
+	}
+	#box3{
+		position:absolute;
+		top: 750px;
+		left: 0px;
+		width: 100%;
+		height: 100px;
+		background-color: #474747;
+	}
+	#biaoti{
+		position:relative;
+		text-align: center;
+    	top: 18px;
+    	left: 0px;
+		color:#FFFFFF;
+		font-size: 50px;	
+	}
+	#box4_5{
+		position:absolute;
+		top: 850px;
+		left: 0px;
+		width: 100%;
+		height: 400px;
+		background-color: #EBEBEB;
+	}
+	#box4{
+    position: inherit;
+    top: 15%;
+    left: 15%;
+    width: 85%;
+    height: 85%;
+	}
+	#box5{
+    position: inherit;
+    top: 15%;
+    right: 15%;
+    width: 85%;
+    height: 85%;
+	}
+	#duanluo_left{
+		position:relative;
+		text-align:left;
+    	top: 0px;
+    	left: 0px;
+		width: 100%;
+		color:#F96265;
+		font-size: 25px;
+		
+	}
+	#duanluo_right{
+		position:relative;
+		text-align:right;
+    	top: 0px;
+    	left: 0px;
+		right: 100px;
+		width: 100%;
+		color:#F96265;
+		font-size: 25px;
+	}
+	#xiaokeai_1{
+    position: inherit;
+    top: -2%;
+    left: -5%;
+	}
+	#xiaokeai_2{
+    position: inherit;
+    top: 36%;
+    left: -5%;
+	}
+	#xiaokeai_3{
+    position: inherit;
+    top: 53%;
+    left: -5%;
+	}
+	#xiaohuli_1{
+    position: inherit;
+    top: 9%;
+    right: -4%;
+	}
+	#xiaohuli_2{
+    position: inherit;
+    top: 26%;
+    right: -4%;
+	}
+	#xiaohuli_3{
+    position: inherit;
+    top: 64%;
+    right: -4%;
+	}
+	#box6{
+		position:absolute;
+		top: 1250px;
+		left: 0px;
+		width: 100%;
+		height: 100px;
+		background-color: #474747;
+	}
+	#box7{
+		position:absolute;
+		top: 1360px;
+		left: 0px;
+		width: 100%;
+		height: 400px;
+	}
+	#xiaokeai_img
+	{
+		height: 400px;
+	}	
+	#box8{
+		position:absolute;
+		top: 1770px;
+		left: 0px;
+		width: 100%;
+		height: 100px;
+		background-image: url("img/shouzhang/0.jpg");
+		background-repeat: repeat-x;
+		background-position: center center;
+	}
+	#box9{
+    position: absolute;
+    top: 1880px;
+    left: 0px;
+    width: 100%;
+    height: 2200px;
+	}
+	.back_color{
+		background-color: #6A6969;
+	}
+	.font_color
+	{
+		color:#FCFCFC;
+	}
+	.card_height{
+    height: 550px;
+	}
+	#box10{
+		position: absolute;
+		top: 4080px;
+		height: 100px;
+		left: 0px;
+		width: 100%;
+		background-color: #000000;
+	}
+</style>
+	
+<body>
+<div id="box1">
+		<h1 id="web_title">小狐狸(❤ ω ❤)小可爱</h1>
+		<div id="box2"></div>
+		<p id="xiao_biao_ti">此&nbsp;&nbsp;&nbsp;&nbsp;站&nbsp;&nbsp;&nbsp;&nbsp;记&nbsp;&nbsp;&nbsp;&nbsp;录&nbsp;&nbsp;&nbsp;&nbsp;了&nbsp;&nbsp;&nbsp;&nbsp;小&nbsp;&nbsp;&nbsp;&nbsp;狐&nbsp;&nbsp;&nbsp;&nbsp;狸&nbsp;&nbsp;&nbsp;&nbsp;和&nbsp;&nbsp;&nbsp;&nbsp;小&nbsp;&nbsp;&nbsp;&nbsp;可&nbsp;&nbsp;&nbsp;&nbsp;爱&nbsp;&nbsp;&nbsp;&nbsp;的&nbsp;&nbsp;&nbsp;&nbsp;爱&nbsp;&nbsp;&nbsp;&nbsp;情&nbsp;&nbsp;&nbsp;&nbsp;！</p>
+		<h4 id="ji_shi">亲爱的，我们已经相爱了：
+			<div id="clock"></div>
+		</h4>
+</div>
+	
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.0.0.js"></script>
+<script type="text/javascript">
+$('#ji_shi').fadeIn(5000);
+var together = new Date();
+together.setFullYear(2020,02 ,12); 			//时间年月日
+together.setHours(02);						//小时	
+together.setMinutes(0);					//分钟
+together.setSeconds(0);					//秒前一位
+together.setMilliseconds(0);				//秒第二位
+$('#messages').fadeIn(5000);
+setInterval(function (){timeElapse(together);}, 1);
+</script>
+	
+<div id="box3">
+  <h2 id="biaoti">这&nbsp;&nbsp;是&nbsp;&nbsp;我&nbsp;&nbsp;们&nbsp;&nbsp;相&nbsp;&nbsp;爱&nbsp;&nbsp;的&nbsp;&nbsp;开&nbsp;&nbsp;始</h2>
+</div>
+<div id="box4_5">
+  <div id="box4">
+	<p id="duanluo_left"><strong>胡立伟小哥哥，谈恋爱吗？我懂事，心细又善良哦！</strong></p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p id="duanluo_left"><strong>愿意啊，小哥哥很好！</strong></p>
+	<p id="duanluo_left"><strong>哎呦，我现在是不是有男朋友的女孩子了！</strong></p>
+	<p>&nbsp;</p>
+	<img id="xiaokeai_1" src="img/1.jpg" width="55" height="55" alt="小可爱" title="小可爱">
+	<img id="xiaokeai_2" src="img/1.jpg" width="55" height="55" alt="小可爱" title="小可爱">
+	<img id="xiaokeai_3" src="img/1.jpg" width="55" height="55" alt="小可爱" title="小可爱">	  
+  </div>
+  <div id="box5">
+	<p>&nbsp;</p>
+	<p id="duanluo_right"><strong>当然要谈啊！</strong></p>
+	<p id="duanluo_right"><strong>刁晗小姐姐，你愿意做我女朋友吗，我温暖，聪明又上进哦！</strong></p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p id="duanluo_right"><strong>是的呢，从现在起你就是我的小可爱了！</strong></p>
+	<img id="xiaohuli_1" src="img/2.jpg" width="55" height="55" alt="小狐狸" title="小狐狸">
+	<img id="xiaohuli_2" src="img/2.jpg" width="55" height="55" alt="小狐狸" title="小狐狸">
+	<img id="xiaohuli_3" src="img/2.jpg" width="55" height="55" alt="小狐狸" title="小狐狸">  
+  </div>
+
+
+
+</div>
+
+<div id="box6">
+	<h2 id="biaoti">You&nbsp;&nbsp;&&nbsp;&nbsp;Me</h2>
+</div>
+
+<div id="box7">
+ <div class="row">
+	<div class="col-xl-6">
+		<div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" style="background-color: grey">
+		<ol class="carousel-indicators">
+		<li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+		<li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+		<li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+		<li data-target="#carouselExampleIndicators1" data-slide-to="3"></li>
+		<li data-target="#carouselExampleIndicators1" data-slide-to="4"></li>
+		<li data-target="#carouselExampleIndicators1" data-slide-to="5"></li>
+		<li data-target="#carouselExampleIndicators1" data-slide-to="6"></li>
+		<li data-target="#carouselExampleIndicators1" data-slide-to="7"></li>
+		<li data-target="#carouselExampleIndicators1" data-slide-to="8"></li>
+		<li data-target="#carouselExampleIndicators1" data-slide-to="9"></li>
+		<li data-target="#carouselExampleIndicators1" data-slide-to="10"></li>
+		<li data-target="#carouselExampleIndicators1" data-slide-to="11"></li>
+		<li data-target="#carouselExampleIndicators1" data-slide-to="12"></li>
+		<li data-target="#carouselExampleIndicators1" data-slide-to="13"></li>
+		<li data-target="#carouselExampleIndicators1" data-slide-to="14"></li>
+		<li data-target="#carouselExampleIndicators1" data-slide-to="15"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="carousel-item active"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/left/1.jpg" alt="1 slide">
+			<div class="carousel-caption">
+			<h5>Bonjour</h5>
+			<p>这是早晨你对我的呼唤！Hi~ o(*￣▽￣*)ブ</p>
+			</div>
+			</div>
+			<div class="carousel-item"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/left/2.jpg" alt="2 slide">
+			<div class="carousel-caption">
+			<h5>登山</h5>
+			<p>想带着你背着帐篷一起去山顶露营！</p>
+			</div>
+			</div>
+			<div class="carousel-item"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/left/3.jpg" alt="3 slide">
+			<div class="carousel-caption">
+			<h5>小可爱</h5>
+			<p>眉头微微蹙起，越看越可爱！(●'◡'●)</p>
+			</div>
+			</div>
+			<div class="carousel-item"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/left/4.jpg" alt="4 slide">
+			<div class="carousel-caption">
+			<h5>登顶</h5>
+			<p>有点刺激，不过还是想跟你一起体验一把！</p>
+			</div>
+			</div>
+			<div class="carousel-item"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/left/5.jpg" alt="5 slide">
+			<div class="carousel-caption">
+			<h5>恋爱手账</h5>
+			<p>知道你给我写了手账时，我异常开心！o(*￣▽￣*)ブ</p>
+			</div>
+			</div>
+			<div class="carousel-item"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/left/6.jpg" alt="6 slide">
+			<div class="carousel-caption">
+			<h5>飞翔</h5>
+			<p>我想上天，想跟你一起飞上天！(～o￣3￣)～</p>
+			</div>
+			</div>
+			<div class="carousel-item"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/left/7.jpg" alt="7 slide">
+			<div class="carousel-caption">
+			<h5>靓女</h5>
+			<p>刚拉的直发，真好看！(❤ ω ❤)</p>
+			</div>
+			</div>
+			<div class="carousel-item"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/left/8.jpg" alt="8 slide">
+			<div class="carousel-caption">
+			<h5>吃鸡</h5>
+			<p>游戏里也要秀恩爱！</p>
+			</div>
+			</div>
+			<div class="carousel-item"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/left/9.jpg" alt="9 slide">
+			<div class="carousel-caption">
+			<h5>萌妹</h5>
+			<p>嗯。。。小嘴巴微微翘起，很是可爱！</p>
+			</div>
+			</div>
+			<div class="carousel-item"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/left/10.jpg" alt="10 slide">
+			<div class="carousel-caption">
+			<h5>比心</h5>
+			<p>怎么我蹲的那么矮呢？？</p>
+			</div>
+			</div>
+			<div class="carousel-item"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/left/11.jpg" alt="11 slide">
+			<div class="carousel-caption">
+			<h5>卖萌</h5>
+			<p>小眼睛眯起来卖个萌，我喜欢！^_~</p>
+			</div>
+			</div>
+			<div class="carousel-item"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/left/12.jpg" alt="12 slide">
+			<div class="carousel-caption">
+			<h5>比心</h5>
+			<p>希望有一天可以跟你一起坐热气球上天！</p>
+			</div>
+			</div>
+			<div class="carousel-item"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/left/13.jpg" alt="13 slide">
+			<div class="carousel-caption">
+			<h5>警告</h5>
+			<p>就是想撩你，警告也没用！(￣_,￣ )</p>
+			</div>
+			</div>
+			<div class="carousel-item"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/left/14.jpg" alt="14 slide">
+			<div class="carousel-caption">
+			<h5>Call Me</h5>
+			<p>每天N个电话，时刻想念你！</p>
+			</div>
+			</div>
+			<div class="carousel-item"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/left/15.jpg" alt="15 slide">
+			<div class="carousel-caption">
+			<h5>撅嘴</h5>
+			<p>这一定是在想我了！O(∩_∩)O</p>
+			</div>
+			</div>
+			<div class="carousel-item"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/left/16.jpg" alt="16 slide">
+			<div class="carousel-caption">
+			<h5>YAMI</h5>
+			<p>我想带你喝茶颜悦色！</p>
+			</div>
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+	</div>
+	<div class="col-xl-6">
+      <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel" style="background-color: grey">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators2" data-slide-to="4"></li>
+          <li data-target="#carouselExampleIndicators2" data-slide-to="5"></li>
+          <li data-target="#carouselExampleIndicators2" data-slide-to="6"></li>
+          <li data-target="#carouselExampleIndicators2" data-slide-to="7"></li>
+          <li data-target="#carouselExampleIndicators2" data-slide-to="8"></li>
+		  <li data-target="#carouselExampleIndicators2" data-slide-to="9"></li>
+          <li data-target="#carouselExampleIndicators2" data-slide-to="10"></li>
+          <li data-target="#carouselExampleIndicators2" data-slide-to="11"></li>
+          <li data-target="#carouselExampleIndicators2" data-slide-to="12"></li>
+          <li data-target="#carouselExampleIndicators2" data-slide-to="13"></li>
+          <li data-target="#carouselExampleIndicators2" data-slide-to="14"></li>
+		  <li data-target="#carouselExampleIndicators2" data-slide-to="15"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+			<div class="carousel-item active"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/right/1.jpg" alt="1 slide">
+			<div class="carousel-caption">
+			<h5>爱你哟</h5>
+			<p>你就是我的女神！</p>
+			</div>
+			</div>
+			<div class="carousel-item"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/right/2.jpg" alt="2 slide">
+			<div class="carousel-caption">
+			<h5>斯文败类</h5>
+			<p>即便穿得像个斯文败类，我还是喜欢你！</p>
+			</div>
+			</div>
+			<div class="carousel-item"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/right/3.jpg" alt="3 slide">
+			<div class="carousel-caption">
+			<h5>哆啦A梦</h5>
+			<p>你就是我的哆啦A梦，有你一切皆有可能！</p>
+			</div>
+			</div>
+			<div class="carousel-item"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/right/4.jpg" alt="4 slide">
+			<div class="carousel-caption">
+			<h5>一见钟情</h5>
+			<p>第一眼见到你，我就喜欢上了你！</p>
+			</div>
+			</div>
+			<div class="carousel-item"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/right/5.jpg" alt="5 slide">
+			<div class="carousel-caption">
+			<h5>气质</h5>
+			<p>这就是女神的气质，我喜欢！</p>
+			</div>
+			</div>
+			<div class="carousel-item"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/right/6.jpg" alt="6 slide">
+			<div class="carousel-caption">
+			<h5>Hello！</h5>
+			<p>我来自日出的地方，去往你的心里！</p>
+			</div>
+			</div>
+			<div class="carousel-item"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/right/7.jpg" alt="7 slide">
+			<div class="carousel-caption">
+			<h5>Wow~ ⊙o⊙</h5>
+			<p>小恶魔来袭，吃定对面的小哥哥！</p>
+			</div>
+			</div>
+			<div class="carousel-item"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/right/8.jpg" alt="8 slide">
+			<div class="carousel-caption">
+			<h5>日出</h5>
+			<p>一起去看日出吧，我陪你从黑夜到天亮！</p>
+			</div>
+			</div>
+			<div class="carousel-item"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/right/9.jpg" alt="9 slide">
+			<div class="carousel-caption">
+			<h5>脑壳疼</h5>
+			<p>遇到问题了？满脸的胶原蛋白让我忍不住就想伸手去摸一下！</p>
+			</div>
+			</div>
+			<div class="carousel-item"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/right/10.jpg" alt="10 slide">
+			<div class="carousel-caption">
+			<h5>男左女右</h5>
+			<p>换个位置比心，我似乎变高了？</p>
+			</div>
+			</div>
+			<div class="carousel-item"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/right/11.jpg" alt="11 slide">
+			<div class="carousel-caption">
+			<h5>比心爱你</h5>
+			<p>化身幸运小鹿，永远伴你左右！</p>
+			</div>
+			</div>
+			<div class="carousel-item"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/right/12.jpg" alt="12 slide">
+			<div class="carousel-caption">
+			<h5>一万点伤害</h5>
+			<p>这个角度怎么看都像是单身狗羡慕嫉妒的视角！</p>
+			</div>
+			</div>
+			<div class="carousel-item"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/right/13.jpg" alt="13 slide">
+			<div class="carousel-caption">
+			<h5>委屈</h5>
+			<p>宝宝委屈，求小哥哥抱抱！</p>
+			</div>
+			</div>
+			<div class="carousel-item"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/right/14.jpg" alt="14 slide">
+			<div class="carousel-caption">
+			<h5>撒狗粮</h5>
+			<p>靠近点，好甜蜜！</p>
+			</div>
+			</div>
+			<div class="carousel-item"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/right/15.jpg" alt="15 slide">
+			<div class="carousel-caption">
+			<h5>大眼睛</h5>
+			<p>一双迷人的大眼睛，悄悄偷走我的心！</p>
+			</div>
+			</div>
+			<div class="carousel-item"> <img id="xiaokeai_img" class="d-block mx-auto" src="img/xiaokeai_me/right/16.jpg" alt="16 slide">
+			<div class="carousel-caption">
+			<h5>亲亲</h5>
+			<p>送你一个爱的亲亲！</p>
+			</div>
+			</div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+    </div>
+</div> 
+</div>
+
+<div id="box8">
+  <h2 id="biaoti">爱&nbsp;&nbsp;的&nbsp;&nbsp;手&nbsp;&nbsp;帐</h2>
+</div>
+<div class="back_color" id="box9">
+	<div class="row">
+		<div class="col-xl-2 card_height">
+		  <div class="card col-md-4 col-xl-12 back_color"> <img class="card-img-top" src="img/shouzhang/1.jpg" alt="Card image cap">
+		    <div class="card-body">
+		      <h5 class="card-title text-center font_color">1</h5>
+		      <p class="card-text font_color">Solo多年，第一次收到这样的礼物，意义非凡，我要小心意义地打开她！</p>
+	        </div>
+	      </div>
+        </div>
+		<div class="col-xl-2 card_height">
+		  <div class="card col-md-4 col-xl-12 back_color"> <img class="card-img-top" src="img/shouzhang/2.jpg" alt="Card image cap">
+		    <div class="card-body">
+		      <h5 class="card-title text-center font_color">2</h5>
+		      <p class="card-text font_color">我愿为朝朝暮暮，伴你春秋无数！</p>
+				
+	        </div>
+	      </div>
+        </div>
+		<div class="col-xl-2 card_height">
+		  <div class="card col-md-4 col-xl-12 back_color"> <img class="card-img-top" src="img/shouzhang/3.jpg" alt="Card image cap">
+		    <div class="card-body">
+		      <h5 class="card-title text-center font_color">3</h5>
+		      <p class="card-text font_color">往后的日子里我会小心搜集你的小秘密，关心你的每一个喜怒哀乐！</p>
+	        </div>
+	      </div>
+        </div>
+		<div class="col-xl-2 card_height">
+		  <div class="card col-md-4 col-xl-12 back_color"> <img class="card-img-top" src="img/shouzhang/5.jpg" alt="Card image cap">
+		    <div class="card-body">
+		      <h5 class="card-title text-center font_color">4</h5>
+		      <p class="card-text font_color">Hello！没错，这就是我，帅气无匹的我，专门为你定制！</p>
+	        </div>
+	      </div>
+        </div>
+		<div class="col-xl-2 card_height">
+		  <div class="card col-md-4 col-xl-12 back_color"> <img class="card-img-top" src="img/shouzhang/6.jpg" alt="Card image cap">
+		    <div class="card-body">
+		      <h5 class="card-title text-center font_color">5</h5>
+		      <p class="card-text font_color">对面的小可爱，你有点漂亮哦，什么情况，小心脏砰砰的跳！</p>
+	        </div>
+	      </div>
+        </div>
+		<div class="col-xl-2 card_height">
+		  <div class="card col-md-4 col-xl-12 back_color"> <img class="card-img-top" src="img/shouzhang/7.jpg" alt="Card image cap">
+		    <div class="card-body">
+		      <h5 class="card-title text-center font_color">6</h5>
+		      <p class="card-text font_color">文质彬彬的我就这样抓住了文采飞扬的你！</p>
+	        </div>
+	      </div>
+        </div>
+	</div>
+  	<div class="row">
+		<div class="col-xl-2 card_height">
+          <div class="card col-md-4 col-xl-12 back_color"> <img class="card-img-top" src="img/shouzhang/8.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center font_color">7</h5>
+              <p class="card-text font_color">走吧，让我们跨越千山万水，一起走过甜蜜时光！</p>
+            </div>
+          </div>
+        </div>
+		<div class="col-xl-2 card_height">
+          <div class="card col-md-4 col-xl-12 back_color"> <img class="card-img-top" src="img/shouzhang/9.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center font_color">8</h5>
+              <p class="card-text font_color">你才是我的五彩斑斓，年幼的我早就为了今天的你熏陶自己！</p>
+            </div>
+          </div>
+        </div>
+		<div class="col-xl-2 card_height">
+          <div class="card col-md-4 col-xl-12 back_color"> <img class="card-img-top" src="img/shouzhang/10.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center font_color">9</h5>
+              <p class="card-text font_color">转眼间我们都已成年，往事已不在，在乎的只有此刻的你！</p>
+            </div>
+          </div>
+        </div>
+		<div class="col-xl-2 card_height">
+          <div class="card col-md-4 col-xl-12 back_color"> <img class="card-img-top" src="img/shouzhang/11.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center font_color">10</h5>
+              <p class="card-text font_color">做一对暖心的爱人，我们一起养猫养狗！</p>
+            </div>
+          </div>
+        </div>
+		<div class="col-xl-2 card_height">
+          <div class="card col-md-4 col-xl-12 back_color"> <img class="card-img-top" src="img/shouzhang/12.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center font_color">11</h5>
+              <p class="card-text font_color">岳麓山下，爱晚亭旁，黄金树边，我想跟你一起许下爱的誓言！</p>
+            </div>
+          </div>
+        </div>
+		<div class="col-xl-2 card_height">
+          <div class="card col-md-4 col-xl-12 back_color"> <img class="card-img-top" src="img/shouzhang/13.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center font_color">12</h5>
+              <p class="card-text font_color">请让我做你的小王子，你就是我的独一无二！</p>
+            </div>
+          </div>
+        </div>
+	</div>
+	<div class="row">
+		<div class="col-xl-2 card_height">
+          <div class="card col-md-4 col-xl-12 back_color"> <img class="card-img-top" src="img/shouzhang/14.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center font_color">13</h5>
+              <p class="card-text font_color">苍天大地待我不薄，算命先生诚不欺我，炎黄之邦赐我宝贝，此生，永不退货！</p>
+            </div>
+          </div>
+        </div>
+		<div class="col-xl-2 card_height">
+          <div class="card col-md-4 col-xl-12 back_color"> <img class="card-img-top" src="img/shouzhang/15.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center font_color">14</h5>
+              <p class="card-text font_color">算命先生说我上辈子拯救了世界，所以此生才能与你相恋！</p>
+            </div>
+          </div>
+        </div>
+		<div class="col-xl-2 card_height">
+          <div class="card col-md-4 col-xl-12 back_color"> <img class="card-img-top" src="img/shouzhang/16.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center font_color">15</h5>
+              <p class="card-text font_color">星光点点，恰似你的眸眼；月光皎洁，犹如你的容颜；银河璀璨，好像你的呼唤；梦境光彩，那是我们的爱！</p>
+            </div>
+          </div>
+        </div>
+		<div class="col-xl-2 card_height">
+          <div class="card col-md-4 col-xl-12 back_color"> <img class="card-img-top" src="img/shouzhang/17.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center font_color">16</h5>
+              <p class="card-text font_color">江南水乡之下，烟雨朦胧之中，请伸出你的双手，让我与你执手前行！</p>
+            </div>
+          </div>
+        </div>
+		<div class="col-xl-2 card_height">
+          <div class="card col-md-4 col-xl-12 back_color"> <img class="card-img-top" src="img/shouzhang/18.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center font_color">17</h5>
+              <p class="card-text font_color">寻一处僻静的山头，让我们远离尘世的喧嚣，静待初升的朝阳！</p>
+            </div>
+          </div>
+        </div>
+		<div class="col-xl-2 card_height">
+          <div class="card col-md-4 col-xl-12 back_color"> <img class="card-img-top" src="img/shouzhang/19.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center font_color">18</h5>
+              <p class="card-text font_color">星河浩瀚、灯火灿烂，没有你的陪伴，这些终将暗淡！</p>
+            </div>
+          </div>
+        </div>
+	</div>
+	<div class="row">
+		<div class="col-xl-2 card_height">
+          <div class="card col-md-4 col-xl-12 back_color"> <img class="card-img-top" src="img/shouzhang/20.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center font_color">19</h5>
+              <p class="card-text font_color">你是我的哆啦A梦，我是你的愿望神灯，你让我梦想成真，我给你心想事成！</p>
+            </div>
+          </div>
+        </div>
+		<div class="col-xl-2 card_height">
+          <div class="card col-md-4 col-xl-12 back_color"> <img class="card-img-top" src="img/shouzhang/21.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center font_color">20</h5>
+              <p class="card-text font_color">两个人走到一起不容易，我们可以一起做很多事情，看日出、堆雪人、看电影、养宠物。。。</p>
+            </div>
+          </div>
+        </div>
+		<div class="col-xl-2 card_height">
+          <div class="card col-md-4 col-xl-12 back_color"> <img class="card-img-top" src="img/shouzhang/22.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center font_color">21</h5>
+              <p class="card-text font_color">除了一起完成一些事，我想，我们也可以为对方做一些事情，悄悄地，不让TA知道！</p>
+            </div>
+          </div>
+        </div>
+		<div class="col-xl-2 card_height">
+          <div class="card col-md-4 col-xl-12 back_color"> <img class="card-img-top" src="img/shouzhang/23.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center font_color">22</h5>
+              <p class="card-text font_color">未来的事情谁也说不准，我们有大把的时光一起疯，一起耍，一起走过千山万水。</p>
+            </div>
+          </div>
+        </div>
+		<div class="col-xl-2 card_height">
+          <div class="card col-md-4 col-xl-12 back_color"> <img class="card-img-top" src="img/shouzhang/24.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center font_color">23</h5>
+              <p class="card-text font_color">想和你做的事情还有很多，让我们用一生的时间慢慢填写。。。</p>
+            </div>
+          </div>
+        </div>
+		<div class="col-xl-2 card_height">
+          <div class="card col-md-4 col-xl-12 back_color"> <img class="card-img-top" src="img/shouzhang/27.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center font_color">24</h5>
+              <p class="card-text font_color">谢谢你，我的小仙女，这份礼物是我多年修来的成果，而你就是它的缔造者！</p>
+            </div>
+          </div>
+        </div>
+	</div>
+</div>
+<div id="box10">
+	<h2 id="biaoti">亲&nbsp;爱&nbsp;的，让&nbsp;我&nbsp;们&nbsp;一&nbsp;起&nbsp;谱&nbsp;写&nbsp;我&nbsp;们&nbsp;的&nbsp;未&nbsp;来&nbsp;！</h2>
+</div>
+<audio autoplay="autoplay" loop="loop" preload="auto"
+src="./music/Canon.mp3">
+你的浏览器不支持audio标签
+</audio>
+</body>
+</html>
